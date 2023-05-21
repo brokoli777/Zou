@@ -1,7 +1,8 @@
 .menu-body{
     background-color: aquamarine;
     padding-top: 50px;
-    width: 200px;
+    /* width: 200px; */
+    margin-left: -20px;
 }
 
 .side-menu-items{
@@ -10,10 +11,10 @@
 }
 
 .side-menu-items:hover{
-    padding: 10px;
+    /* padding: 10px; */
     background-color: yellow;
 } 
 
 .menu-text{
-    margin-left: 10px;
+    margin-left: 20px;
 }

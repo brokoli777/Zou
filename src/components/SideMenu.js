@@ -10,10 +10,7 @@ import { IoSettingsSharp } from "react-icons/io5";
 
 function SideMenu() {
 
-  const [menuCollapse, setMenuCollapse] = useState(false)
-  const menuClick = () =>{
-    menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
-  }
+ 
   return (
     <div className="menu-body">
       {/* <Sidebar collapsed={menuCollapse}>
