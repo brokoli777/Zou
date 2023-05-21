@@ -1,0 +1,19 @@
+.menu-body{
+    background-color: aquamarine;
+    padding-top: 50px;
+    width: 200px;
+}
+
+.side-menu-items{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.side-menu-items:hover{
+    padding: 10px;
+    background-color: yellow;
+} 
+
+.menu-text{
+    margin-left: 10px;
+}
