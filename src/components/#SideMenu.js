@@ -13,15 +13,7 @@ function SideMenu() {
  
   return (
     <div className="menu-body">
-      {/* <Sidebar collapsed={menuCollapse}>
-          <div className="menuIcon"><AiOutlineMenu/></div>
-          <Menu>
-            <MenuItem>Home</MenuItem>
-            <MenuItem>Subscriptions</MenuItem>
-            <MenuItem>Liked Videos</MenuItem>
-            <MenuItem>Settings</MenuItem>
-          </Menu>
-      </Sidebar>; */}
+
       <ul>
         <div className="side-menu-items"><AiFillHome/><span className="menu-text">Home</span></div>
         <div className="side-menu-items"><AiFillFire /><span className="menu-text">Trending</span></div>

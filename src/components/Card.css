@@ -1,0 +1,38 @@
+.card-main-container{
+    width: 400px;
+    cursor: pointer;
+}
+
+.card-image{
+    width: 100%;
+    background-color: gray;
+    border-radius: 10px
+}
+
+.profilePicture{
+    width: 35px;
+    border-radius: 20px;
+}
+
+.videoInfo{
+    display: flex;
+    column-gap: 10px;
+    padding-top: 5px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+
+.cardTitle{
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .card-main-container{
+        width: 200px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,14 @@
+.home-main-container{
+    background-color: rgb(120, 120, 81);
+    margin-top: 60px;
+    color: aliceblue;
+    display: flex;
+    justify-content: stretch;
+    margin-left: 100px;
+    padding: 20px;
+    width: 100%;
+    gap: 40px;
+    flex-wrap: wrap; 
+
+}
+
