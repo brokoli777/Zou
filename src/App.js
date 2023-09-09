@@ -11,7 +11,7 @@ import {
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Video from './pages/Video';
-import SignIn from './pages/SignIn';
+import Login from './pages/Login'
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
         <Routes>
                 <Route path="/">
                   <Route index element={<Home />} />
-                  <Route path="signin" element={<SignIn />} />
+                  <Route path="login" element={<Login />} />
                   {/* <Route path="video" element={<Video />} /> */}
                   <Route path="video">
                     <Route path=":id" element={<Video />} /> 

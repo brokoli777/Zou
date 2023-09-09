@@ -1,24 +1,59 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 .container{
     display: flex;
+    flex-wrap: wrap;
     background-color: lightcoral;
+    /* width: 100%; */
+    padding-top: 85px;
+    /* margin-right: 30px; */
+    /* gap: 30px; */
+    overflow-x: hidden;
     width: 100%;
-    padding-top: 110px;
-    padding-left: 50px;
 }
 
 .content{
     flex: 4;
-    
+    /* padding-left: 100px;
+    padding-right: 50px; */
+    /* margin-right: 20px; */
+    padding: 0px 20px;
+    margin-bottom: 20px;
 }
 
 
 .recommendation{
     flex: 2;
+    background-color: aquamarine;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 14px;
+}
+
+.title{
+    font-size: large;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+.video{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-height: 480px;
+}
+
+.viewCount{
+    font-size:medium;
+    background-color: aquamarine;
 }
 
 .details{
     display: flex;
-    column-gap: 50px;
+    /* column-gap: 50px; */
     /* width: 854px;
     height: 50px; */
     padding-top: 5px;
@@ -26,26 +61,28 @@
     padding-left: 5px;
     padding-right: 5px;
 
-    width: 854px;
+    width: auto;
     background-color: yellow;
-    height: 50px;
+    height: 30px;
     align-items: center;
-    
+    margin-bottom: 10px;
 }
 
 .subscribeButton{
      
     height: 30px;
+    margin-left: auto;
 }
 
 .icon{
     background-color: orange;
+    /* height: 40px; */
 }
 
 .interactButtons{
     margin-left: auto;
     display: flex;
-    column-gap: 20px;
+    column-gap: 5px;
 }
 
 .shareButton{
@@ -57,5 +94,104 @@
     border-radius: 50%;
     height: 40px;
 }
-  
 
+.channelInfo{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.videoDescription{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: azure;
+    margin-top: 5px;
+    width: auto;
+}
+
+.commentSection{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.userCommentSection{
+    display: flex;
+    max-width: 854px;
+    column-gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: blueviolet;
+    
+}
+
+.commentInput{
+    padding: 10px;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.allComments{
+    /* display: flex;
+    flex-direction: column;
+    align-items: start; */
+    /* row-gap: 10px; */
+    margin-top: 20px;
+}
+
+
+/* Media Queries */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .content{
+        flex: 4;
+        padding: 0px;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: lightcoral;
+        width: 100%;
+        padding-top: 85px;
+        margin: 0;
+        /* gap: 30px; */
+    }
+
+    .details{
+        font-size: small;
+    
+    }
+
+    .viewCount{
+        font-size: small;
+    }
+
+    .icon{
+        height: 20px;
+    }
+
+    .channelInfo{
+        /* padding: 0px 15px; */
+    }
+
+    .title{
+        padding-left: 5px;
+    }
+
+    /* .channelInfo{
+        margin-bottom: 10px;
+    } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

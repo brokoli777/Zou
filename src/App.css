@@ -1,3 +1,50 @@
+/* Reset default margins and padding on all elements */
+:root,
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote,
+pre,
+dl, dd, ol, ul,
+figure,
+table,
+fieldset,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+/* Set box-sizing to border-box for consistent sizing calculation */
+:root,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set a base font size and family */
+:root {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove underlines from links */
+a {
+  text-decoration: none;
+}
+
+
+
+
 .App{
   display: flex;
   background-color: black;

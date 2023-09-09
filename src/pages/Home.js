@@ -5,6 +5,7 @@ import Card from '../components/Card'
 
 function Home() {
   return (
+    <>
     <div className='home-main-container'> 
         <Card/>
         <Card/>
@@ -23,6 +24,8 @@ function Home() {
         <Card/>
         <Card/>
     </div>
+    </>
+    
   )
 }
 

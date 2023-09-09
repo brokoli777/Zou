@@ -1,0 +1,40 @@
+.side-card-main-container{
+    width: 400px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+/* .recommendation{
+    display: flex;
+} */
+
+.side-card-cardTitle{
+    font-weight: 600;
+}
+
+.side-card-image{
+    background-color: gray;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+.side-card-videoInfo{
+    display: flex;
+    column-gap: 10px;
+    padding-top: 5px;
+}
+
+.side-card-row{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .side-card-main-container{
+        
+    }
+}

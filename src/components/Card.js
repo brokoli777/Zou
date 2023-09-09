@@ -1,5 +1,5 @@
 import React from 'react'
-import './Card.css'
+import styles from './Card.css'
 import Thumbnail from '../Assets/sampleThumbnailImg.jpg'
 import ProfilePicture from  '../Assets/channels_profile.jpg'
 import { Link } from 'react-router-dom'
@@ -15,7 +15,7 @@ const Card = () => {
             
           </div>
           <div className="row">
-            <div className="cardTitle">"How to get a million subscribers (real)"</div>
+            <div className="cardTitle">How to get a million subscribers (real)</div>
             <div className="channelName">Pewdiepie</div>
             <div className="viewCount">261K views &#183; 3 weeks ago</div>
           </div>

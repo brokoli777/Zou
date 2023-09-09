@@ -1,0 +1,57 @@
+
+.loginPage{
+    /* width: 100%; */
+    height: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    width: 100%;
+    margin: auto;
+    background-color: beige;
+    
+    
+}
+
+.mainLoginBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+    width: 500px;
+    padding: 50px;
+}
+
+.loginContainer{
+    border-radius: 10px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.signupHeader{
+    text-align: center;
+}
+
+.loginHeader{
+    text-align: center;
+}
+
+.signupContainer{
+    border-radius: 10px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.input{
+    width: 80%;
+}
+
