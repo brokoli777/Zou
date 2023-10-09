@@ -3,8 +3,8 @@ import './Video.css'
 // import { AiFillLike } from 'react-icons/fa';
 import { AiOutlineLike, AiOutlineDislike, AiOutlineShareAlt} from "react-icons/ai";
 import ChannelPic from '../Assets/channels_profile.jpg'
-import Comment from '../components/Comment';
-import SideCard from '../components/SideCard'
+import Comment from '../components/Comment.js';
+import SideCard from '../components/SideCard.js'
 
 function Video() {
   return (

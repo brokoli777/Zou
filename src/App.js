@@ -8,10 +8,10 @@ import {
   Link
 } from "react-router-dom";
 //import SideMenu from './components/SideMenu';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Video from './pages/Video';
-import Login from './pages/Login'
+import Navbar from './components/Navbar.js';
+import Home from './pages/Home.js';
+import Video from './pages/Video.js';
+import Login from './pages/Login.js'
 
 function App() {
 
@@ -21,7 +21,9 @@ function App() {
       <Navbar/>
         <Routes>
                 <Route path="/">
-                  <Route index element={<Home />} />
+                  <Route index element={<Home type="random"/>} />
+                  <Route path="trending" element={<Home type="trending"/>} />
+                  <Route path="subscriptions" element={<Home type="sub"/>} />
                   <Route path="login" element={<Login />} />
                   {/* <Route path="video" element={<Video />} /> */}
                   <Route path="video">
