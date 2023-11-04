@@ -11,7 +11,7 @@ function Home(props) {
     const fetchVideos = async () => {
       const res = await axios.get(`/videos/${props.type}`)
       SetVideos(res.data)
-      console.log("hello"+ res.data)
+      //console.log("hello"+ res.data)
     }
     fetchVideos();
 

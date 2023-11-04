@@ -9,6 +9,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import {  useSelector } from "react-redux/es/hooks/useSelector";
+import { useDispatch } from 'react-redux';
+import { loginFailure, loginStart, loginSuccess, logout } from '../redux/userSlice';
 
 
 //side-menu imports
@@ -23,7 +26,14 @@ function Navbar() {
       menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
     }
 
-    
+  const { currentUser } = useSelector((state) => state.user);
+  console.log(currentUser)
+
+  function deleteCookie(cookieName) {
+    document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  }
+
+  const dispatch = useDispatch()
     
   return (
     <div className="headerContainer">
@@ -71,8 +81,21 @@ function Navbar() {
             <div className="fa fa-solid fa-bars fa-lg hamburger-menu nav-items" onClick={menuClick}></div>
             <input className="nav-items search-bar" type="text" placeholder='Search '/>
             <div className="rightSideButtons nav-items">
-              <Link to='/login'><button className="loginButton nav-items">Log In</button></Link>
-              <img className= "pfpImage "src={profileImg} alt="" />
+            
+              {!currentUser ? (
+                <Link to="/login">
+                  <button className="loginButton nav-items">Log In</button>
+                </Link>
+              ) : (
+                <>
+                <button className="loginButton nav-items" onClick={()=>{deleteCookie("access_token"); dispatch(logout())}}>Log Out</button>
+                <img className="pfpImage" src={profileImg} alt="" />
+                
+                </>
+              )}
+  
+              {/* <Link to='/login'><button className="loginButton nav-items">Log In</button></Link>
+              <img className= "pfpImage "src={profileImg} alt="" /> */}
             </div>
             
         </nav>

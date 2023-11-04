@@ -5,7 +5,7 @@ const initialState = {
   error: false
   }
 
-  export const userSlice = createSlice({
+  export const videoSlice = createSlice({
     name: 'user',
     initialState: {
       value: 0
@@ -30,5 +30,5 @@ const initialState = {
     }
   })
 
-  export const {loginStart,loginSuccess,loginFailure,logout} = userSlice.actions
-  export default userSlice.reducer;
+  export const {loginStart,loginSuccess,loginFailure,logout} = videoSlice.actions
+  export default videoSlice.reducer;
