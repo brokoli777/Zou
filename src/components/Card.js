@@ -18,7 +18,7 @@ const Card = (props) => {
   }, [props.video.userId]);
 
   return (
-    <Link to={`/video/${props.key}`} style={{textDecoration: "none"}}>
+    <Link to={`/video/${props.video._id}`} style={{textDecoration: "none"}}>
     <div className='card-main-container'>
          <img className='card-image' src={props.video.imgURL} alt="" />
          <div className='videoInfo'>
