@@ -23,7 +23,7 @@ const Card = (props) => {
          <img className='card-image' src={props.video.imgURL} alt="" />
          <div className='videoInfo'>
           <div className="row">
-            <img className='profilePicture' src={channel.imgURL} alt="" srcset="" /> 
+            <img className='profilePicture' src={channel.imgURL} alt=""  /> 
             
           </div>
           <div className="row">

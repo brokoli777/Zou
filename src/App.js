@@ -12,8 +12,11 @@ import Navbar from './components/Navbar.js';
 import Home from './pages/Home.js';
 import Video from './pages/Video.js';
 import Login from './pages/Login.js'
+import { useSelector } from "react-redux";
 
 function App() {
+
+  const { currentUser } = useSelector((state) => state.user);
 
   return (
     <div className="App">
